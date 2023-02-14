@@ -37,10 +37,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      # - name: Install dependencies
-      #   run: pnpm install 
-      # - name: Install dependencies
-      #   run: pnpm install
-      #   with:
-      #     env:
-      #         DOTENV_KEY: ${{ secrets.DOTENV_KEY }}
+      - name: Install dependencies
+        run: pnpm install && pnpm run build
+        
+#        with:
+#            env:
+#               DOTENV_KEY: ${{ secrets.DOTENV_KEY }}
