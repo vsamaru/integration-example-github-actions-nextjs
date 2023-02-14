@@ -1,0 +1,22 @@
+{
+  "name": "integration-example-github-actions-nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "node -r dotenv-vault-core/config ./node_modules/.bin/next dev",
+    "build": "node -r dotenv-vault-core/config ./node_modules/.bin/next build",
+    "start": "node -r dotenv-vault-core/config ./node_modules/.bin/next start",
+    "lint": "node -r dotenv-vault-core/config ./node_modules/.bin/next lint"
+  },
+  "dependencies": {
+    "dotenv-vault-core": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  }
+}
